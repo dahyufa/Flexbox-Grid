@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Praktikum 6.3</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			min-height: 90vh;
+			flex-direction: column;
+			margin: 0;
+		}
+		#main{
+			display: flex;
+			flex: 1;
+		}
+		#main>article{
+			flex: 1;
+			order: 1;
+		}
+		#main>nav{
+			flex: 0 0 20vw;
+		}
+		#main>nav{
+			background: pink;
+			order: 0;
+			margin: 20px;
+			height: 65vh;
+		}
+		article{
+			background: #03DAC5;
+			width: 45vh;
+			height: 65vh;
+			margin: 20px;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 16vh;
+		}
+		box{
+			display: flex;
+			flex: 1 1 1;
+			flex-direction: row;
+			height: 200px;
+			align-items: flex-end;
+		}
+		box1{
+			width: 30px; 
+			height: 30px; 
+			padding: 37.5px;
+			margin: 10px;
+		}
+		box2{
+			width: 30px; 
+			height: 30px; 
+			padding: 37.5px;
+			margin: 10px;
+		}
+		box3{
+			width: 30px; 
+			height: 30px; 
+			padding: 37.5px;
+			margin: 10px;
+		}
+		header,footer{
+			background: #E0FFFF;
+			height: 10vh;
+			margin: 10px;
+		}
+		header,footer,article,nav,aside{
+			padding: 1em;
+		}
+		#container{
+			display: flex;
+			justify-content: space-around;
+		}
+	</style>
+</head>
+
+<body>
+	<header>Header</header>
+	<div id="main">
+		<article><h3>Article</h3>
+		<div id="container">
+			<div class="box box1"><img src="1.jpg" alt="1" width="275"></div>
+			<div class="box box1"><img src="1.jpg" alt="1" width="275"></div>
+			<div class="box box1"><img src="1.jpg" alt="1" width="275"></div>
+		</div>
+		</article>
+		<nav>Nav</nav>
+	</div>
+	<footer>Footer</footer>		
+</body>
+</html>
+
